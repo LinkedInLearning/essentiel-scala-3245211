@@ -1,0 +1,13 @@
+import scala.io.StdIn.readInt
+
+@main def run: Unit =
+  function()
+
+
+  def function(): Unit =
+    print("Veuillez entrer un nombre :")
+    var i = readInt()
+    while (i < 10) {
+      println(s"$i*3 = "  + (i*3))
+      i+=2
+    }

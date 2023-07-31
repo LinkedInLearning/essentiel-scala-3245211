@@ -1,0 +1,38 @@
+@main def run: Unit = {
+
+  var a_book: Book = new ITBook("Le Machine Learning avec Python", "M.Khichane", price = 40, domain = "Data Science")
+  a_book.get_infos()
+  a_book = new Novel("The Old Man and the Sea", "Ernest Hemingway", price = 20, category = "Roman")
+  a_book.get_infos()
+
+}
+
+
+class Book(val title:String, val author:String, var price: Float) {
+
+  def get_infos(): Unit = {
+    println(s"Voici les informations du livre : $title")
+    println(s"Auteur : $author")
+    println(s"Prix : $price")
+  }
+
+}
+
+class Novel(title:String,  author:String, price:Float, val category:String) extends Book(title, author, price){
+
+  override def get_infos():Unit = {
+    super.get_infos()
+    println(s"Catégorie : $category")
+
+  }
+}
+
+class ITBook(title:String,  author:String, price:Float, val domain:String) extends Book(title, author, price){
+
+  override def get_infos():Unit = {
+    super.get_infos()
+    println(s"Domain : $domain")
+
+  }
+}
+

@@ -1,0 +1,24 @@
+@main def run: Unit = {
+
+  var book1: Book = new Book("Le Machine Learning avec Python", "M.Khichane", price = 40)
+  book1.get_infos()
+  var book2: Book = new Book("Le Machine Learning avec Python", "M.Khichane")
+  book2.get_infos()
+
+
+
+}
+class Book(val title:String, val author:String, var price: Float) {
+
+  def get_infos(): Unit = {
+    println(s"Voici les informations du livre : $title")
+    println(s"Auteur : $author")
+    println(s"Prix : $price")
+  }
+
+  def this(title:String, author:String) = {
+    this(title, author, 0)
+    println("Le constructeur secondaire")
+  }
+
+}

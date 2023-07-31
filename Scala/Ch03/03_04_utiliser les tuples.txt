@@ -1,0 +1,19 @@
+@main def run: Unit =
+  function()
+
+
+def function(): Unit =
+  val t_1=(1,"Hello", true)
+  println(t_1)
+
+
+  val  t_2 = new Tuple3(1,"Hello", true)
+  println(t_2)
+
+
+
+  println(t_1._3)
+
+  t_1.productIterator.foreach{
+    i =>println(i)
+  }

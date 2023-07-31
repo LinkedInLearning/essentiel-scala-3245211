@@ -1,0 +1,24 @@
+@main def run: Unit =
+  function()
+
+
+def function() = {
+  val a = 10
+  val b = 0
+  println(a/b)
+  println("Hello")
+}
+
+
+/*
+def function() = {
+  val a = 10
+  val b = 0
+  try {
+    println(a/b)
+  }
+  catch {
+    case ex:ArithmeticException => println("Exception capturée ! ")
+  }
+}
+*/

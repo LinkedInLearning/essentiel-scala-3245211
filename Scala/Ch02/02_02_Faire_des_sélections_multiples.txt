@@ -1,0 +1,35 @@
+import scala.io.StdIn.readInt
+
+@main def run: Unit =
+  function()
+
+
+  def function() =
+    print("Veuillez entrer un nombre :")
+    var i = readInt()
+     
+    i match {
+      case 1 => println("Lundi")
+      case 2 => println("Mardi")
+      case 3 => println("Mercredi")
+      case 4 => println("Jeudi")
+      case 5 => println("Vendredi")
+      case 6 => println("Samedi")
+      case 7 => println("Dimanche")
+      case _ => println("Erreur")
+    }
+     
+    /**
+     val s = i match {
+       case 1 => "Lundi"
+       case 2 => "Mardi"
+       case 3 => "Mercredi"
+       case 4 => "Jeudi"
+       case 5 => "Vendredi"
+       case 6 => "Samedi"
+       case 7 => "Dimanche"
+       case _ => "Erreur"
+     }
+
+     println(s"s= $s")
+     **/

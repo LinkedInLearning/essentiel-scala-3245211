@@ -1,0 +1,19 @@
+@main def run: Unit =
+  function()
+
+
+def function(): Unit =
+  var my_list : List[Int] = List(0,9,5,6,8,7,3,10,2,4,1)
+  val nb_elem = my_list.length
+  var is_sorted = false
+  while ( ! is_sorted){
+    is_sorted = true
+    for (i <-0 to (nb_elem-2))
+       if(my_list(i)>my_list(i+1)) {
+         val temp = my_list(i)
+          my_list = my_list.updated(i, my_list(i+1 ))
+          my_list = my_list.updated(i+1, temp)
+          is_sorted = false
+      }
+  }
+  println(my_list)

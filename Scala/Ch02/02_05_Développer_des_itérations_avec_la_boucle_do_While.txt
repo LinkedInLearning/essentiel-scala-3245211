@@ -1,0 +1,16 @@
+import scala.io.StdIn.readInt
+
+@main def run: Unit =
+  function()
+
+
+  def function(): Unit =
+    print("Veuillez entrer un nombre :")
+    var j = readInt()
+    for (a <- 1 to 10)
+      var b = readInt()
+      while (b < a)
+          res = a * b
+          println(s"a*b= $res")
+
+

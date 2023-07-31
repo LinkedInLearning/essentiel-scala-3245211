@@ -1,0 +1,21 @@
+@main def run: Unit = {
+
+  var a_book: Book = new Book("Le Machine Learning avec Python", "M.Khichane", price = 40)
+  a_book.get_infos()
+  a_book compute 10
+
+}
+
+class Book(val title:String, val author:String, var price: Float) {
+
+  def get_infos(): Unit = {
+    println(s"Voici les informations du livre : $title")
+    println(s"Auteur : $author")
+    println(s"Prix : $price")
+  }
+
+  def compute(a:Int):Unit = {
+    println(a*a)
+  }
+
+}

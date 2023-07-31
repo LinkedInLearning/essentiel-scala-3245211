@@ -1,0 +1,20 @@
+@main def run: Unit =
+  function()
+
+
+def function(): Unit =
+  var my_list : List[Int] = List(0,9,5,6,8,7,3,10,2,4,1)
+  val nb_elem = my_list.length
+
+
+  for (i <-0 to (nb_elem-2)){
+    for (j <- (i+1) to (nb_elem-1) ){
+      if(my_list(j)<my_list(i)){
+        val temp = my_list(i)
+        my_list = my_list.updated(i, my_list(j))
+        my_list = my_list.updated(j, temp)
+      }
+    }
+  }
+
+  println(my_list)

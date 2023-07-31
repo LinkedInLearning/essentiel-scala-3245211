@@ -1,0 +1,13 @@
+@main def run: Unit =
+  function()
+
+
+def function(): Unit =
+  val list_1 : List[Int] = List(0,9,5,6,8,7,3,10,2,4,1)
+  var max = 0
+  list_1.foreach(
+    elem =>
+      if (elem >max) max = elem
+  )
+
+  println(s"La max = $max")

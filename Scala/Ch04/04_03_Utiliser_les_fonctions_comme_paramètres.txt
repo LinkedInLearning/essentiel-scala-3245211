@@ -1,0 +1,27 @@
+@main def run: Unit =
+  function()
+
+
+def function(): Unit =
+  val a=10
+  val b=1
+
+  val res1 = my_func(a,b, my_func_1)
+  println(s"res1 = $res1")
+
+  val res2 = my_func(a, b, my_func_2)
+  println(s"res2 = $res2")
+
+
+def my_func(a:Int, b:Int, func_param: (Int,Int)=>Int):Int ={
+  return func_param(a,b)
+}
+
+
+def my_func_1(a:Int, b:Int):Int ={
+  return a*2+b
+}
+
+def my_func_2(a:Int, b:Int):Int ={
+  return a*2-b
+}

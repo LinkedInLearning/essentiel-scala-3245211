@@ -1,0 +1,12 @@
+@main def run: Unit = {
+
+  var o : Math = new Rectangle(height = 5, width = 2)
+  println(o.area())
+  o = new Square(side = 5)
+  println(o.area())
+
+}
+
+
+ 
+

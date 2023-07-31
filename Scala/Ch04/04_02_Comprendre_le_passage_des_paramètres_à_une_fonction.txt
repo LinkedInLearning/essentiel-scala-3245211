@@ -1,0 +1,19 @@
+@main def run: Unit =
+  function()
+
+
+def function(): Unit =
+  val a = 1
+  val b = 2
+  val res1 = add_func(100)
+  println(s"res1 = $res1")
+
+
+  val res2 = (a:Int, b:Int)=>a*2+b
+  val res3 = res2(10,2)
+  println(s"res3 = $res3")
+
+
+def add_func(a:Int =10, b:Int=15):Int ={
+  return a+b
+}

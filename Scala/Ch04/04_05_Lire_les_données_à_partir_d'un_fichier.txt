@@ -1,0 +1,18 @@
+import scala.io.Source
+
+@main def run: Unit =
+  function()
+
+
+def function() = {
+  val my_data = Source.fromFile("../../../Ch04/data.txt")
+  println(my_data)
+
+  val lines = my_data.getLines()
+  println(lines)
+
+  val numbers = lines.map(_.toInt).toList
+  println(numbers)
+
+
+}

@@ -1,0 +1,16 @@
+import scala.io.StdIn.readLine
+
+@main def run: Unit =
+  function()
+
+  def function():Unit =
+     val x = 15
+     if (x == 10){
+        println(s" x == $x")
+     }else{
+        println("x!=10")
+     }
+     val r =  if (x==10)  s" x == $x" else "x!=10"
+     println(r)
+     var y = if(x!=10) x*3 else x/3
+     println(s"y = $y")

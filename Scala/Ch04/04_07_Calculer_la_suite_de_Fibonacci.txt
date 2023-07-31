@@ -1,0 +1,13 @@
+@main def run: Unit =
+  function()
+
+
+def function() = {
+   val n = 10
+    
+   
+
+
+}
+
+ 
