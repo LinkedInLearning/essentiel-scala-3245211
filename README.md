@@ -20,5 +20,11 @@ Ce cours est une introduction au langage Scala. Après avoir abordé quelques no
 
 **Madjid Khichane** 
 
-Retrouvez mes autres formations sur LinkedIn Learning.
- 
+Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
+
+[0]: # (Replace these placeholder URLs with actual course URLs)
+[lil-course-url]: https://www.linkedin.com
+[lil-thumbnail-url]: https:
+[lil-URL-trainer]: https://www.linkedin.com/learning/instructors/madjid-khichane
+
+[1]: # (End of FR-Instruction ###############################################################################################)
