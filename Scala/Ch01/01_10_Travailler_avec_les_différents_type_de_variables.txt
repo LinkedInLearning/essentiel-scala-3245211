@@ -1,0 +1,23 @@
+@main def run: Unit =
+  my_own_function_3()
+
+def my_own_function_1() : Unit =
+  val a = 10
+  //var b = 20
+  //println("b =" + b)
+
+  println("a= " + a)
+
+def my_own_function_2() : Unit =
+  val a = 10
+  val b = 10
+  val c = a+b
+  println(s"c = $c")
+
+def my_own_function_3() : Unit =
+  val a = true
+  var b = false
+  //val c = a && b
+  val c = a || b
+  //println(s"c = $c")
+  println(!c)

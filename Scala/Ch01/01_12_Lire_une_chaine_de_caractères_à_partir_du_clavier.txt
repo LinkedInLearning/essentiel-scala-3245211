@@ -1,0 +1,8 @@
+import scala.io.StdIn.readLine
+
+@main def run: Unit =
+  function_1()
+
+def function_1() : Unit =
+  val line =  readLine("Veuillez saisir une chaine de caractères :")
+  println(s"Line est égale à = $line")
